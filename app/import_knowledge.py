@@ -27,5 +27,18 @@ def import_file(filepath: str):
         collection.upsert(documents=documents, ids=ids)
         print(f"✅ 匯入完成，共 {len(documents)} 筆資料")
 
+def import_converted(filepath: str):
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    blocks = [b.strip() for b in content.split("\n\n---\n\n")]
+    documents = [b for b in blocks if b]
+    ids = [f"converted_{idx}" for idx in range(len(documents))]
+
+    if documents:
+        collection.upsert(documents=documents, ids=ids)
+        print(f"✅ 匯入完成，共 {len(documents)} 個詞綴群組")
+
 if __name__ == "__main__":
     import_file("knowledge/poe_mods.txt")
+    import_converted("knowledge/converted/mods_converted.txt")
