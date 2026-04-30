@@ -1,0 +1,51 @@
+# Path of Exile 詞綴價值評估知識庫
+
+## 攻擊類詞綴（高價值）
+"adds X to Y physical damage" → 物理傷害詞綴，近戰和弓箭手 build 核心詞綴，數值越高越有價值
+"X% increased physical damage" → 物理傷害百分比，近戰武器最重要詞綴之一
+"X% increased attack speed" → 攻速詞綴，幾乎所有攻擊型 build 都需要，T1數值約16%以上
+"X% increased critical strike chance" → 爆擊率，爆擊 build 核心，通常需要配合爆擊傷害
+"X% increased critical strike multiplier" → 爆擊傷害倍率，爆擊 build 最重要詞綴之一
+
+## 法術類詞綴（高價值）
+"X% increased spell damage" → 法術傷害，法師 build 基礎詞綴
+"X% increased elemental damage" → 元素傷害，火/冰/雷法師通用
+"X% increased cast speed" → 施法速度，法師 build 重要詞綴
+"adds X to Y fire/cold/lightning damage to spells" → 法術元素附加傷害，高價值
+
+## 防禦類詞綴（高價值）
+"X% increased maximum life" → 生命上限，所有 build 都需要，T1約90-99
+"X% increased energy shield" → 能量護盾，ES build 核心詞綴
+"X% spell suppression chance" → 法術壓制，閃避系 build 重要，上限50%
+"X% increased evasion rating" → 閃避值，閃避系 build 需要
+"X% increased armour" → 護甲值，護甲系 build 需要
+"+X to maximum life" → 固定生命值加成，高價值通用詞綴
+
+## 抗性詞綴（中高價值）
+"X% to fire/cold/lightning resistance" → 元素抗性，裝備湊抗性必備
+"X% to all elemental resistances" → 全抗，極高價值詞綴
+"X% to chaos resistance" → 混沌抗性，高難度內容必備
+
+## 插槽相關（視情況）
+"socketed gems are supported by level X multicast" → 特殊輔助插槽，視技能決定價值
+"socketed skill gems get a X% mana multiplier" → 降低魔力消耗，輔助型詞綴
+
+## 特殊詞綴（高價值）
+"X% increased movement speed" → 移速，幾乎所有 build 都想要，T1約35%
+"gain X% of physical damage as extra fire/cold/lightning damage" → 物理轉換元素，特定 build 核心
+"X% of physical damage taken as fire/cold/lightning damage" → 傷害轉換，坦克 build 使用
+"regenerate X life per second" → 生命回復，特定 build 使用
+
+## 低價值詞綴（通常不值得）
+"X% increased stun duration on enemies" → 暈眩持續時間，幾乎無用
+"X% reduced attribute requirements" → 降低屬性需求，極少數情況有用
+"X% increased light radius" → 光源範圍，無戰鬥價值
+
+## 裝備部位判斷
+武器 → 優先看傷害詞綴、攻速、爆擊
+頭盔 → 優先看生命、抗性、特殊技能加成
+胸甲 → 優先看生命/ES、抗性、插槽數量
+手套 → 攻速、生命、抗性
+鞋子 → 移速、生命、抗性
+戒指/護符 → 抗性、生命、傷害加成
+腰帶 → 生命、抗性、特殊詞綴

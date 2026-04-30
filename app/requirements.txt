@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+chromadb-client
+langchain
+langchain-community
+langchain-ollama
+httpx
+onnxruntime
+tokenizers
+langchain-core
+aiofiles

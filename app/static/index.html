@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>PoE 裝備分析</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #1a1a2e; color: #eee; }
+    h1 { color: #e2b96f; }
+    textarea { width: 100%; height: 200px; background: #16213e; color: #eee; border: 1px solid #e2b96f; padding: 10px; font-size: 14px; }
+    button { margin-top: 10px; padding: 10px 30px; background: #e2b96f; color: #1a1a2e; border: none; cursor: pointer; font-size: 16px; font-weight: bold; }
+    button:hover { background: #f0d080; }
+    #result { margin-top: 20px; background: #16213e; padding: 15px; border-left: 4px solid #e2b96f; white-space: pre-wrap; min-height: 100px; }
+    #loading { display: none; color: #e2b96f; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>⚔️ PoE 裝備分析</h1>
+  <p>將遊戲內 Ctrl+C 複製的裝備資訊貼上：</p>
+  <textarea id="itemText" placeholder="貼上裝備資訊..."></textarea>
+  <br>
+  <button onclick="analyze()">分析裝備</button>
+  <div id="loading">⏳ 分析中，請稍候...</div>
+  <div id="result"></div>
+
+  <script>
+    async function analyze() {
+      const item = document.getElementById("itemText").value;
+      if (!item.trim()) return;
+
+      document.getElementById("loading").style.display = "block";
+      document.getElementById("result").innerText = "";
+
+      const response = await fetch("/analyze", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ item: item })
+      });
+
+      const data = await response.json();
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("result").innerText = data.result;
+    }
+  </script>
+</body>
+</html>
