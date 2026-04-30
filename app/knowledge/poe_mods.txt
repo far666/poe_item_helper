@@ -1,51 +1,176 @@
 # Path of Exile 詞綴價值評估知識庫
+# 數值來源：RePoE mods.json，T1 = 最高階
 
 ## 攻擊類詞綴（高價值）
-"adds X to Y physical damage" → 物理傷害詞綴，近戰和弓箭手 build 核心詞綴，數值越高越有價值
-"X% increased physical damage" → 物理傷害百分比，近戰武器最重要詞綴之一
-"X% increased attack speed" → 攻速詞綴，幾乎所有攻擊型 build 都需要，T1數值約16%以上
-"X% increased critical strike chance" → 爆擊率，爆擊 build 核心，通常需要配合爆擊傷害
-"X% increased critical strike multiplier" → 爆擊傷害倍率，爆擊 build 最重要詞綴之一
+"adds X to Y physical damage" → 附加物理傷害 (prefix)，出現於武器/戒指/護符/手套/箭袋
+  武器 T1: 34-47 min + 72-84 max（需求等級77）
+  戒指/護符/手套 T1: 17-23 min + 34-39 max（需求等級76）
+
+"X% increased local physical damage" → 武器物理傷害百分比 (prefix)，只出現於武器
+  T1: 165-179%（需求等級83），近戰/弓箭手武器最重要詞綴
+
+"X% increased attack speed (local)" → 武器攻速 (suffix)，只出現於武器/弓
+  T1: 26-27%（需求等級77）
+  注意：手套/戒指的全域攻速 T1 只有 14-16%，兩者不同
+
+"X% increased attack speed (global)" → 全域攻速 (suffix)，出現於手套/戒指/箭袋
+  T1: 14-16%（需求等級76），幾乎所有攻擊型 build 都需要
+
+"X% increased critical strike chance (local)" → 武器爆擊率 (suffix)，只出現於武器
+  T1: 35-38%（需求等級73）
+
+"+X% to critical strike multiplier" → 爆擊傷害倍率 (suffix)，出現於武器/護符/戒指
+  T1: 35-38%（需求等級73-74），爆擊 build 最重要詞綴
 
 ## 法術類詞綴（高價值）
-"X% increased spell damage" → 法術傷害，法師 build 基礎詞綴
-"X% increased elemental damage" → 元素傷害，火/冰/雷法師通用
-"X% increased cast speed" → 施法速度，法師 build 重要詞綴
+"X% increased spell damage" → 法術傷害百分比 (prefix)，出現於護符/部分影響護甲/法杖
+  高階值約 40-50%+，法師 build 基礎詞綴
+
+"X% increased elemental damage" → 元素傷害百分比，火/冰/雷法師通用
+  單元素 T1 約 45-50%（視部位不同）
+
+"X% increased cast speed" → 施法速度 (suffix)，法師 build 重要詞綴
+  T1 約 12-13%（需求等級77）
+
 "adds X to Y fire/cold/lightning damage to spells" → 法術元素附加傷害，高價值
+  雷 T1: 1-24（需求等級76）
 
 ## 防禦類詞綴（高價值）
-"X% increased maximum life" → 生命上限，所有 build 都需要，T1約90-99
-"X% increased energy shield" → 能量護盾，ES build 核心詞綴
-"X% spell suppression chance" → 法術壓制，閃避系 build 重要，上限50%
-"X% increased evasion rating" → 閃避值，閃避系 build 需要
-"X% increased armour" → 護甲值，護甲系 build 需要
-"+X to maximum life" → 固定生命值加成，高價值通用詞綴
+"+X to maximum life" → 固定生命加成 (prefix)，最核心通用詞綴
+  body armour/盾 T1: 175-189（需求等級86）
+  T7（約85-99）就算不錯；T1以下每個 tier 降約15點
+  ⚠ 注意：這是 +X 固定值，不是 % 增加生命
+
+"X% increased maximum energy shield" → 能量護盾百分比，ES build 核心詞綴
+  body armour 內建 ES 詞綴 T1 數值高（視裝甲種類）
+
+"X% chance to suppress spell damage" → 法術傷害壓制 (suffix)，閃避系必備
+  出現部位：dex/混合護甲（手套/靴/頭盔/胸甲）
+  T1: 20-21%（需求等級85）
+  實際作用：壓制時受到傷害減少50%；可疊加到100%壓制機率
+  ⚠ 50% 是壓制率上限（Acrobatics），不是詞綴本身上限
+
+"X% increased evasion rating" → 閃避值百分比 (prefix)，閃避系 build 需要
+  T1（護符/腰帶影響）: 33-36%（需求等級77）
+
+"X% increased armour" → 護甲百分比 (prefix)，護甲系需要
+  T1（護符/腰帶影響）: 33-36%（需求等級77）
 
 ## 抗性詞綴（中高價值）
-"X% to fire/cold/lightning resistance" → 元素抗性，裝備湊抗性必備
-"X% to all elemental resistances" → 全抗，極高價值詞綴
-"X% to chaos resistance" → 混沌抗性，高難度內容必備
+"X% to fire/cold/lightning resistance" → 單素抗 (suffix)，出現於護甲/戒指/護符/腰帶/箭袋
+  T1: 46-48%（需求等級84）
+  T4: 30-35%（實用門檻）；T2: 42-45%
 
-## 插槽相關（視情況）
-"socketed gems are supported by level X multicast" → 特殊輔助插槽，視技能決定價值
-"socketed skill gems get a X% mana multiplier" → 降低魔力消耗，輔助型詞綴
+"X% to all elemental resistances" → 全抗 (suffix)，出現於盾/戒指/護符/腰帶
+  T1: 16-18%（需求等級75-85 依版本）
+  極高價值，一格換三個抗性
+
+"X% to chaos resistance" → 混沌抗性 (suffix)，出現於護甲/戒指/護符/腰帶/箭袋
+  T1: 31-35%（需求等級81）
+  高難度內容（深淵/腐化地圖）必備
 
 ## 特殊詞綴（高價值）
-"X% increased movement speed" → 移速，幾乎所有 build 都想要，T1約35%
-"gain X% of physical damage as extra fire/cold/lightning damage" → 物理轉換元素，特定 build 核心
-"X% of physical damage taken as fire/cold/lightning damage" → 傷害轉換，坦克 build 使用
-"regenerate X life per second" → 生命回復，特定 build 使用
+"X% increased movement speed" → 移速 (prefix)，只出現於靴子（及部分塑者裝備）
+  T1: 35%（需求等級86）——數值固定不浮動
+  T2: 30%，T3: 25%，T4: 20%
+
+"gain X% of physical damage as extra fire/cold/lightning damage" → 物理轉換元素
+  特定 build 核心（如熔岩打擊、寒冰射擊），通常為塑者/影響詞綴
+
+"X% of physical damage taken as fire/cold/lightning damage" → 物理傷害轉換（坦克用）
+  T1: 13-15%（影響裝備，需求等級83），可疊加來減少純物理承傷
 
 ## 低價值詞綴（通常不值得）
-"X% increased stun duration on enemies" → 暈眩持續時間，幾乎無用
+"X% increased stun duration on enemies" → 暈眩持續，幾乎無用
 "X% reduced attribute requirements" → 降低屬性需求，極少數情況有用
-"X% increased light radius" → 光源範圍，無戰鬥價值
+"X% increased light radius" → 光源範圍，零戰鬥價值
+"X% increased flask charges gained" → 藥水充能速度，除非有特殊 build 需求
+"X% increased mana recovery rate" → 魔力回復速度，武器/攻擊裝備上幾乎無用
+  爪/劍/斧等攻擊武器靠「偷取魔力」或「擊中獲得魔力」補魔，不靠回復速度
+  ⚠ 出現在武器上應視為廢詞，嚴重降低裝備價值
+"X% increased mana regeneration rate" → 魔力回生速度，同上，攻擊型 build 不需要
+"gain X mana per enemy hit" → 擊中獲得魔力，偶爾有用，但通常不如其他詞綴
 
-## 裝備部位判斷
-武器 → 優先看傷害詞綴、攻速、爆擊
-頭盔 → 優先看生命、抗性、特殊技能加成
-胸甲 → 優先看生命/ES、抗性、插槽數量
-手套 → 攻速、生命、抗性
-鞋子 → 移速、生命、抗性
-戒指/護符 → 抗性、生命、傷害加成
-腰帶 → 生命、抗性、特殊詞綴
+## 武器與裝備基底評估（依據 NeverSink VERY STRICT 篩選器）
+基底決定 DPS/防禦天花板，爛基底再好的詞綴也救不了。
+基底不在以下列表 → 直接降評為「沒價值」或「過渡裝」，除非有正確勢力可合成。
+
+### 爪（Claw）
+Eagle Claw（鷹爪刃）, Gemini Claw（雙子爪）, Hellion's Paw（獄犬爪）, Imperial Claw（帝國爪）, Noble Claw（貴族爪）, Terror Claw（恐懼爪）, Twin Claw（雙爪）
+⚠ Harpy's Claw（鷹身女妖爪）不在列表 → 低階基底，無勢力時評為「沒價值」
+爪評估邏輯：需有物傷% 或 高附加物傷 + 攻速；純元素傷害無物傷%價值有限
+
+### 單手劍（One Hand Sword）
+Battered Foil, Corsair Sword, Elegant Foil, Fancy Foil, Jewelled Foil, Poignard, Serrated Foil, Spiraled Foil, Stiletto, Whalebone Rapier, Wyrmbone Rapier
+
+### 單手斧（One Hand Axe）
+Despot Axe, Reaver Axe
+
+### 雙手斧（Two Hand Axe）
+Apex Cleaver, Honed Cleaver, Infernal Blade, Psychotic Axe, Vaal Axe
+
+### 單手錘（One Hand Mace）
+Boom Mace, Crack Mace, Piledriver
+
+### 匕首（Dagger）
+Pneumatic Dagger, Pressurised Dagger
+
+### 魔杖（Wand）
+Blasting Wand, Calling Wand, Congregator Wand, Convoking Wand, Kinetic Wand, Opal Wand, Profane Wand, Prophecy Wand, Somatic Wand, Tornado Wand
+
+### 法杖（Staff / Warstaff）
+Battery Staff, Eventuality Rod, Ezomyte Staff, Potentiality Rod, Reciprocation Staff
+
+### 弓（Bow）
+Foundry Bow, Grove Bow, Harbinger Bow, Highborn Bow, Imperial Bow, Ivory Bow, Maraketh Bow, Reflex Bow, Short Bow, Solarine Bow, Spine Bow, Steelwood Bow, Thicket Bow
+
+### 箭袋（Quiver）
+Artillery Quiver, Broadhead Arrow Quiver, Feathered Arrow Quiver, Heavy Arrow Quiver, Primal Arrow Quiver, Vile Arrow Quiver
+
+### 頭盔（Helmet）
+Ancient Mask, Bone Helmet, Conqueror's Helmet, Conquest Helmet, Deicide Mask, Divine Crown, Eternal Burgonet, Ezomyte Burgonet, Faithful Helmet, Giantslayer Helmet, General's Helmet, Haunted Bascinet, Hubris Circlet, Jester Mask, Knight Helm, Lich's Circlet, Moonlit Circlet, Nightmare Bascinet, Paladin Crown, Praetor Crown, Prophet Crown, Regicide Mask, Royal Burgonet, Sunfire Circlet, Torturer's Mask, Vaal Mask
+
+### 胸甲（Body Armour）
+Arcane Vestment, Assassin's Garb, Astral Leather, Carnal Armour, Conquest Lamellar, Exquisite Leather, Full Dragonscale, Full Wyvernscale, General's Brigandine, Gladiator Plate, Glorious Plate, Grand Ringmail, Legion Plate, Marshall's Brigandine, Necrotic Armour, Nightweave Robe, Paladin's Hauberk, Royal Plate, Sacred Chainmail, Sacrificial Garb, Sadist Garb, Saintly Chainmail, Saint's Hauberk, Sanguine Raiment, Syndicate's Garb, Titan Plate, Torturer Garb, Triumphant Lamellar, Twilight Regalia, Vaal Regalia
+
+### 手套（Gloves）
+Apothecary's Gloves, Assassin's Mitts, Chimerascale Gauntlets, Crusader Gloves, Dragonscale Gauntlets, Fingerless Silk Gloves, Goliath Gauntlets, Gripped Gloves, Harpyskin Gloves, Hydrascale Gauntlets, Infiltrator Mitts, Legion Gloves, Leviathan Gauntlets, Martyr Gloves, Murder Mitts, Phantom Mitts, Precursor Gauntlets, Sage Gloves, Slink Gloves, Sorcerer Gloves, Spiked Gloves, Stealth Gloves, Titan Gauntlets, Vaal Gauntlets, Velour Gloves, Warlock Gloves, Wyvernscale Gauntlets
+
+### 靴子（Boots）
+Ambush Boots, Assassin's Boots, Chimerascale Boots, Crusader Boots, Dragonscale Boots, Fugitive Boots, Goliath Greaves, Harpyskin Boots, Hydrascale Boots, Infiltrator Boots, Legion Boots, Leviathan Greaves, Martyr Boots, Murder Boots, Paladin Boots, Phantom Boots, Precursor Greaves, Sage Slippers, Sharkskin Boots, Slink Boots, Sorcerer Boots, Stealth Boots, Titan Greaves, Two-Toned Boots, Vaal Greaves, Velour Boots, Warlock Boots, Wyvernscale Boots, Zealot Boots
+
+### 盾牌（Shield）
+Archon Kite Shield, Cardinal Round Shield, Colossal Tower Shield, Ebony Tower Shield, Ezomyte Tower Shield, Fossilised Spirit Shield, Heavy Shield, Lacquered Buckler, Mirrored Spiked Shield, Pinnacle Tower Shield, Shagreen Tower Shield, Supreme Spiked Shield, Titanium Spirit Shield
+
+### 戒指（Ring）
+Amethyst Ring, Cerulean Ring, Diamond Ring, Opal Ring, Prismatic Ring, Steel Ring, Vermillion Ring
+（其餘戒指基底如 Ruby/Sapphire/Topaz Ring 為過渡，Two-Stone Ring 為中階實用）
+
+### 護符（Amulet）
+Agate Amulet, Jade Amulet, Lapis Amulet, Onyx Amulet, Turquoise Amulet
+
+### 腰帶（Belt）
+Crystal Belt, Heavy Belt, Stygian Vise
+（Vanguard Belt 為力量/智慧混合選項，Leather Belt 為低階過渡）
+
+## 勢力裝備（Influenced Items）特殊說明
+帶有 Shaper/Elder/Crusader/Redeemer/Hunter/Warlord 勢力標記的裝備：
+- 基底正確 + 物品等級 ≥ 80 + 正確勢力 → 評為「合成用」，有一定價值
+- 可透過 Awakener Orb 合成獨特勢力詞綴組合
+- 無勢力標記的普通稀有裝備，廢詞就是廢詞，不能以「合成用」為由抬高評價
+
+## 裝備部位判斷優先順序
+武器     → 物理傷害%、附加物傷、攻速（local）、爆擊率（local）、爆擊倍率
+頭盔     → 生命、抗性、技能加成（如 +2 to socketed gems）
+胸甲     → 生命/ES（數值最高）、抗性、插槽數量
+手套     → 攻速（global）、生命、抗性、附加物傷
+鞋子     → 移速（最重要）、生命、抗性、法術壓制
+盾牌     → 全抗、生命、格擋率（取決於 build）
+戒指/護符 → 抗性、生命、傷害加成、屬性
+腰帶     → 生命（腰帶 T1 約 100-119）、抗性、特殊影響詞綴
+
+## Tier 評估標準（通用）
+T1     → 頂級，即使單獨出現也值錢
+T2-T3  → 優秀，接近 T1 但預算友好
+T4-T5  → 實用，日常刷圖夠用
+T6+    → 低階，通常需要多個高抗性詞綴組合才有意義

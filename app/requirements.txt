@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-chromadb-client
+chromadb>=0.6.0
 langchain
 langchain-community
 langchain-ollama
